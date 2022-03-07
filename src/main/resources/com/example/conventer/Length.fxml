@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="553.0" prefWidth="690.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.conventer.LengthControl">
+   <children>
+      <Label layoutX="33.0" layoutY="65.0" prefHeight="53.0" prefWidth="594.0" text="                                     Length  Conventer">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfamount2" layoutX="143.0" layoutY="146.0" prefHeight="43.0" prefWidth="212.0" promptText="Enter the amount" />
+      <Label layoutX="22.0" layoutY="141.0" prefHeight="53.0" prefWidth="112.0" text="Amount">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfResult2" layoutX="143.0" layoutY="328.0" prefHeight="43.0" prefWidth="212.0" />
+      <Label layoutX="14.0" layoutY="323.0" prefHeight="53.0" prefWidth="112.0" text="Result">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="205.0" prefHeight="53.0" prefWidth="112.0" text="From">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tffrom2" layoutX="143.0" layoutY="210.0" prefHeight="43.0" prefWidth="212.0" promptText="KILO" />
+      <TextField fx:id="tfTo2" layoutX="143.0" layoutY="268.0" prefHeight="43.0" prefWidth="212.0" promptText="Mils" />
+      <Label layoutX="14.0" layoutY="263.0" prefHeight="53.0" prefWidth="112.0" text="To">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Button fx:id="conventerLen2Btn" onAction="#converLengthMilToKILAction" layoutX="14.0" layoutY="406.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="148.0" text="ConvetMilToKLO">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="cancelBtn2" layoutX="143.0" layoutY="454.0" mnemonicParsing="false" onAction="#cancelButtonOnAction2" prefHeight="37.0" prefWidth="112.0" text="Close">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="insertBtn2" onAction="#insertButtonOnAction2" layoutX="14.0" layoutY="454.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="112.0" text="Insert">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tvconvter2" layoutX="363.0" layoutY="132.0" prefHeight="394.0" prefWidth="315.0">
+         <columns>
+            <TableColumn fx:id="colid2" prefWidth="75.0" text="id" />
+            <TableColumn fx:id="colamount2" prefWidth="75.0" text="amount" />
+            <TableColumn fx:id="colfrom2" prefWidth="75.0" text="from" />
+            <TableColumn fx:id="colto2" prefWidth="75.0" text="to" />
+            <TableColumn fx:id="colreslut2" prefWidth="75.0" text="reeslut" />
+         </columns>
+      </TableView>
+      <Button fx:id="conventerLen2Btn1" onAction="#converLengthKILOTOMILAction" layoutX="181.0" layoutY="406.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="166.0" text="ConvertKILOTOMIL">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

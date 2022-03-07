@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="303.0" prefWidth="601.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.conventer.Controller">
+   <children>
+      <Label fx:id="welcomeText" layoutX="40.0" layoutY="61.0" prefHeight="35.0" prefWidth="495.0" text="                 Pick Your Unit Conversions" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="conventerMainBtn" layoutX="22.0" layoutY="165.0" mnemonicParsing="false" onAction="#onButtonClickCurrency" text="currency converter">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="lengBtn" layoutX="187.0" layoutY="165.0" mnemonicParsing="false" onAction="#onButtonClickLength" text="Length Converters">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="weightBtn" layoutX="349.0" layoutY="165.0" mnemonicParsing="false" onAction="#onButtonClickWeight" text="Weight Converters">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="areaBtn"  layoutX="220.0" layoutY="221.0" mnemonicParsing="false" onAction="#onButtonClickArea" text="Area Converters">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
